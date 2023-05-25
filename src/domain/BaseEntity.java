@@ -1,20 +1,20 @@
 package domain;
 
-public class BaseEntity<T> {
-    private Long id;
+public class BaseEntity<Id> {
+    private Id id;
 
-    public BaseEntity(Long id) {
+    public BaseEntity(Id id) {
         this.id = id;
     }
 
     public BaseEntity() {
     }
 
-    public Long getId() {
+    public Id getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Id id) {
         this.id = id;
     }
 }
