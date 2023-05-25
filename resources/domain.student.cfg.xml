@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="domain">
+    <class name="Student" table="Students">
+        <id name="id">
+            <generator class="identity"></generator>
+        </id>
+        <property name="firstName" type="java.lang.String" column="FIRSTNAME" />
+        <property name="lastName" type="java.lang.String" column="LASTNAME" />
+        <property name="dob" type="java.util.Date" column="DOB" />
+        <property name="enteringYear" type="java.lang.String" column="ENTERING_YEAR" />
+        <property name="major" type="java.lang.String" column="MAJOR" />
+
+    </class>
+
+</hibernate-mapping>
